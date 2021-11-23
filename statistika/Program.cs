@@ -7,13 +7,16 @@ namespace statistika
         static void Main(string[] args)
         {
             ConsoleKeyInfo keyInfo;
+            string povoleneznaky = "0123456789";
 
-            while (true)
+            do
             {
                 keyInfo = Console.ReadKey(true);
-                Console.WriteLine(keyInfo.Key.ToString());
+                if (povoleneznaky.Contains(keyInfo.KeyChar));
+                {
 
-            }
+                }
+            } while (keyInfo.Key != ConsoleKey.Escape);
         }
     }
 }
