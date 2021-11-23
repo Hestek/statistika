@@ -6,7 +6,14 @@ namespace statistika
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConsoleKeyInfo keyInfo;
+
+            while (true)
+            {
+                keyInfo = Console.ReadKey(true);
+                Console.WriteLine(keyInfo.Key.ToString());
+
+            }
         }
     }
 }
